@@ -1,3 +1,2 @@
 # TrustBusterTeam
-TrustBusterTeam
 *szia cica*
