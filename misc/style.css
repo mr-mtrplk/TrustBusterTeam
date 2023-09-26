@@ -9,7 +9,12 @@ background-color: #082b08;
     font-family:sans-serif;
     min-height:500px;
 }
-
+main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: justify;
+}
 @keyframes gm-slidein {
     from {
         -webkit-transform:translate3d(0,-100%,0);
