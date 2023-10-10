@@ -7,7 +7,7 @@ background-color: var(--background);
 --primary: #14db14;
 --secondary: #adffad;
 --accent: #26cf26;
-
+--button : #04180400;
 font-family:'Courier New', monospace ;
 color: var(--text);
 }
@@ -109,7 +109,7 @@ main{
   .openbtn {
     font-size: 30px;
     cursor: pointer;
-    background-color: var(--background);
+    background-color: var(--button);
     color: var(--text);
     padding: 10px 15px;
     border: none;
@@ -136,7 +136,10 @@ main{
   .container {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    position:relative;
+    top:0;
+
   }
    
    #gif3 {
@@ -177,4 +180,7 @@ main{
     text-align: right;
     text-decoration: none;
     text-shadow: var(--accent) 2px;
+   }
+   img{
+    position: relative
    }
