@@ -4,6 +4,10 @@ background-color: #082b08;
 --primary: #14db14;
 --secondary: #adffad;
 --accent: #26cf26;
+font-family:'Courier New', monospace ;
+}
+h1 {
+  text-align: center;
 }
 .heropanel--video {
     font-family:sans-serif;
