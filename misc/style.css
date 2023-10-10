@@ -1,13 +1,19 @@
 body{
-color: #d4f7d4;
-background-color: #081a2b;
+color: var(--accent);
+background-color: var(--background);
+--text: #d4f7d4;
+--background: #041804;
+--sidebar: #030f03;
 --primary: #14db14;
 --secondary: #adffad;
 --accent: #26cf26;
+
 font-family:'Courier New', monospace ;
+color: var(--text);
 }
 h1 {
   text-align: center;
+  color:var(--secondary) ;
 }
 .heropanel--video {
     font-family:sans-serif;
@@ -39,7 +45,7 @@ main{
     -o-animation:gm-slidein 3s 1;
     -webkit-animation:gm-slidein 3s 1;
     animation:gm-slidein 3s 1;
-    border-bottom:1px solid #FFF;
+    border-bottom:1px solid var(--secondary);
     margin:0 auto;
     max-width:50%;
     padding:4em 0 2em;
@@ -52,12 +58,12 @@ main{
 }
 
 .heropanel__content h1 a {
-    color:#FFF;
+    color:var(--secondary);
     text-decoration:none;
 }
 
 .heropanel__content p {
-    color:#fff;
+    color:var(--secondary);
     margin:0;
     text-transform:uppercase;
 }
@@ -69,7 +75,7 @@ main{
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: var(--sidebar); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -80,14 +86,14 @@ main{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: var(--text);
     display: block;
     transition: 0.3s;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
-    color: #f1f1f1;
+    color: var(--accent);
   }
   
   /* Position and style the close button (top right corner) */
@@ -101,16 +107,17 @@ main{
   
   /* The button used to open the sidebar */
   .openbtn {
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
+    background-color: var(--background);
+    color: var(--text);
     padding: 10px 15px;
     border: none;
+    transition: transform .2s
   }
   
   .openbtn:hover {
-    background-color: #444;
+    transform: scale(1.25);
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -133,9 +140,8 @@ main{
   }
    
    #gif3 {
-    width: 200%;
-    height: 200%;
-    margin-right: 100px;
+    width: 50%;
+    height: 50%;
    }
    
    #gif4{
@@ -153,4 +159,22 @@ main{
    #gif5 {
     width: 100%;
     max-height: 400px;
+    margin-top: 20px;
+   }
+   a {
+    color: var(--secondary);
+    text-emphasis: none;
+   }
+   a:hover {
+    color: var(--primary);
+    text-emphasis: none;
+   }
+   #3text {
+    margin-bottom: 20px;
+   }
+
+   footer{
+    text-align: right;
+    text-decoration: none;
+    text-shadow: var(--accent) 2px;
    }
