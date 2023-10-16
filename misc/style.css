@@ -1,112 +1,138 @@
-body{
-color: var(--accent);
-background-color: var(--background);
---text: #d4f7d4;
---background: #041804;
---sidebar: #030f03;
---primary: #14db14;
---secondary: #adffad;
---accent: #26cf26;
---button : #04180400;
-font-family:'Courier New', monospace ;
-color: var(--text);
+body {
+    color: var(--accent);
+    background-color: var(--background);
+    --text: #d4f7d4;
+    --background: #041804;
+    --sidebar: #030f03;
+    --primary: #14db14;
+    --secondary: #adffad;
+    --accent: #26cf26;
+    --button: #04180400;
+    font-family: sans-serif;
+    color: var(--text);
 }
+
 h1 {
-  text-align: center;
-  color:var(--secondary) ;
+    text-align: center;
+    color: var(--secondary);
 }
-.heropanel--video {
-    font-family:sans-serif;
-    min-height:500px;
-}
-main{
+
+main {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     text-align: justify;
 }
+
+.formatedimg:nth-of-type(even) {
+    width: 350px;
+    float: right;
+    margin-left: 10px;
+}
+
+.formatedimg:nth-of-type(odd) {
+    width: 500px;
+    float: left;
+    margin-right: 10px;
+}
+
+.formatedimg:first-of-type {
+    width: 500px;
+    float: left;
+    margin-right: 10px;
+}
+
 @keyframes gm-slidein {
     from {
-        -webkit-transform:translate3d(0,-100%,0);
-        opacity:0;
-        transform:translate3d(0,-100%,0);
+        -webkit-transform: translate3d(0, -100%, 0);
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
     }
-  
+
     to {
-        -webkit-transform:none;
-        opacity:1;
-        transform:none;
+        -webkit-transform: none;
+        opacity: 1;
+        transform: none;
     }
 }
 
 .heropanel__content {
-    -moz-animation:gm-slidein 3s 1;
-    -ms-animation:gm-slidein 3s 1;
-    -o-animation:gm-slidein 3s 1;
-    -webkit-animation:gm-slidein 3s 1;
-    animation:gm-slidein 3s 1;
-    border-bottom:1px solid var(--secondary);
-    margin:0 auto;
-    max-width:50%;
-    padding:4em 0 2em;
-    text-align:center;
+    -moz-animation: gm-slidein 3s 1;
+    -ms-animation: gm-slidein 3s 1;
+    -o-animation: gm-slidein 3s 1;
+    -webkit-animation: gm-slidein 3s 1;
+    animation: gm-slidein 3s 1;
+    border-bottom: 1px solid var(--secondary);
+    margin: 0 auto;
+    max-width: 50%;
+    padding: 4em 0 2em;
+    text-align: center;
 }
 
 .heropanel__content h1 {
-    margin:0 0 .5em;
-    text-transform:uppercase;
+    margin: 0 0 .5em;
+    text-transform: uppercase;
 }
 
 .heropanel__content h1 a {
-    color:var(--secondary);
-    text-decoration:none;
+    color: var(--secondary);
+    text-decoration: none;
 }
 
 .heropanel__content p {
-    color:var(--secondary);
-    margin:0;
-    text-transform:uppercase;
+    color: var(--secondary);
+    margin: 0;
+    text-transform: uppercase;
 }
+
 /* The sidebar menu */
 .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
     top: 0;
     left: 0;
-    background-color: var(--sidebar); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  /* The sidebar links */
-  .sidebar a {
+    background-color: var(--sidebar);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: var(--text);
     display: block;
     transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
     color: var(--accent);
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn {
+}
+
+/* The button used to open the sidebar */
+.openbtn {
     font-size: 30px;
     cursor: pointer;
     background-color: var(--button);
@@ -114,73 +140,83 @@ main{
     padding: 10px 15px;
     border: none;
     transition: transform .2s
-  }
-  
-  .openbtn:hover {
+}
+
+.openbtn:hover {
     transform: scale(1.25);
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
     padding: 20px;
     position: fixed;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+}
 
-  .container {
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
-    top:0;
+    position: relative;
+    top: 0;
 
-  }
-   
-   #gif3 {
+}
+
+#gif3 {
     width: 50%;
     height: 50%;
-   }
-   
-   #gif4{
+}
+
+#gif4 {
     max-width: 200%;
     max-height: 200%;
 
-   }
-   
-   .text {
+}
+
+.text {
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
-   }
+}
 
-   #gif5 {
+#gif5 {
     width: 100%;
     max-height: 400px;
     margin-top: 20px;
-   }
-   a {
+}
+
+a {
     color: var(--secondary);
     text-emphasis: none;
-   }
-   a:hover {
+}
+
+a:hover {
     color: var(--primary);
     text-emphasis: none;
-   }
-   #3text {
-    margin-bottom: 20px;
-   }
+}
 
-   footer{
+#3text {
+    margin-bottom: 20px;
+}
+
+footer {
     text-align: right;
     text-decoration: none;
     text-shadow: var(--accent) 2px;
-   }
-   img{
+}
+
+img {
     position: relative
-   }
+}
