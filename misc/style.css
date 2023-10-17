@@ -10,6 +10,9 @@ body {
     --button: #04180400;
     font-family: sans-serif;
     color: var(--text);
+    background-image: url(istockphoto-1350046657-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -174,8 +177,8 @@ main {
 }
 
 #gif3 {
-    width: 50%;
-    height: 50%;
+    width: 150%;
+    height: 150%;
 }
 
 #gif4 {
